@@ -1,0 +1,180 @@
+/*#65dfc9 #6cdbeb*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #964269;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2, p {
+    color: #e23d7c;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #ff458b, #ff7058);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 90vh;
+    width: 65%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 70px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 2;
+    backdrop-filter: blur(24px);
+    display: flex;
+}
+
+/* CIRCLES */
+
+.circle1, .circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    bottom: 15%;
+    left: 10%;
+}
+.circle2{ 
+    top: 20%;
+    right: 10%;
+}
+
+/* DASHBOARD SECTION */
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 70px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5 rem;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.promotional{
+    background: linear-gradient(to right top, #ff458b, #ff7058);
+    border-radius: 5px;
+    border-bottom-right-radius: 70px;
+    display: flex;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.promotional img {
+    position: absolute;
+    top: -7%;
+    left: 55%;
+}
+
+.promotional h2 {
+    width: 50%;
+    color: white;
+}
+
+/* GAMES SECTION */
+
+.games {
+    flex: 2;
+    margin: 3rem;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-evenly;
+}
+
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255,255,255,0.2), rgba(255,255,255,0.7));
+    border-radius: 15px;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgb(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.progress { 
+    background: linear-gradient(to right top, #ff458b, #ff7058); 
+    width: 100%;
+    height: 25%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    background: rgb(228, 228, 228);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#clashofclans::after {
+    content: "";
+    left: 80%;
+}
+
+#pokemongo::after {
+    content: "";
+    left: 40%;
+}
+
+#minecraft::after {
+    content: "";
+    left: 50%;
+}
+
+.percentage {
+    font-weight: bold;
+}
